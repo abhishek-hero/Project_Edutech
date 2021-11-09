@@ -1,9 +1,8 @@
 import './App.css';
 import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
 
-import { Header } from './Components/Header'
-import { Home } from './Components/Home'
-import { Footer } from './Components/Footer'
+import {Community} from "./Components/Community"
+import {Home} from "./Components/Home"
 
 
 // Note: If you want to use bootstrap then import it like 
@@ -14,9 +13,7 @@ function App() {
   return (
     <div className="App">
 
-      <Header />
-      <Home />
-      <Footer></Footer>
+     <Community/>
 
     </div>
   );
