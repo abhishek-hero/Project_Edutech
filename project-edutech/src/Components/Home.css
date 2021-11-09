@@ -3,7 +3,7 @@
     text-align: left;
     margin: auto;
     color: #5A5A5A;
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
 .home_carousel_title strong {
@@ -16,4 +16,8 @@
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 0.02em;
+}
+
+.spaceDiv {
+    height: 100px;
 }

@@ -10,7 +10,7 @@ export const Carousel = ({ title, height, background, radius, width, border, nam
                 <span className='carousel_link'>See all</span>
             </div>
 
-            <div className="carousel_home">
+            <div className="carousel_home1">
 
                 <span>
                     <img src={background} style={{ borderRadius: radius, width: width, border: border }} className="carousel_img" alt=''>
