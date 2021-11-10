@@ -1,13 +1,15 @@
 import React from 'react'
 import './Carousel.css'
+import { Link } from 'react-router-dom'
 
 export const Carousel = ({ title, height, background, radius, width, border, name, profession }) => {
     return (
 
         <>
+
             <div className="carousel_heading">
                 <span className='carousel_title'>{title}</span>
-                <span className='carousel_link'>See all</span>
+                <Link to='/mentors'><span className='carousel_link'>See all</span></Link>
             </div>
 
             <div className="carousel_home1">

@@ -1,7 +1,8 @@
 import React from 'react'
 import './LiveCarouselTop.css'
+import { Link } from 'react-router-dom'
 
-export const LiveCarouselTop = ({ title, background, background1, background2, background3 }) => {
+export const LiveCarouselTop = ({ title, background, background1, background2, background3, pathout }) => {
     return (
 
         <>

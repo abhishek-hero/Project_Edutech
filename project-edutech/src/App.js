@@ -1,6 +1,8 @@
+// import { Router, Switch } from 'react-router';
 import './App.css';
-// import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Home } from './Components/Home'
+import { MentorPage } from './Components/MentorPage'
 
 
 // Note: If you want to use bootstrap then import it like 
@@ -9,11 +11,24 @@ import { Home } from './Components/Home'
 
 function App() {
   return (
-    <div className="App">
 
-      <Home />
+    <Router>
+      <div className="App">
 
-    </div>
+        <Switch>
+
+          <Route path='/mentors'>
+            <MentorPage></MentorPage>
+          </Route>
+
+          <Route path='/'>
+            <Home />
+          </Route>
+
+        </Switch>
+
+      </div>
+    </Router>
   );
 }
 
