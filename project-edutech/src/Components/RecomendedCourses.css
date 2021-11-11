@@ -1,0 +1,54 @@
+.img-cont{
+    position: absolute;
+    width: 171px;
+    height: 150px;
+    
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(40, 176, 220, 0.1);
+    border-radius: 7px;
+}
+.ethical{
+    left: 24px;
+    top: 104px;
+}
+
+.classical{
+   left: 53%;
+   top: 104px;
+}
+.content{
+    left: 24px;
+    top: 275px;
+
+}
+.chess{
+    left: 53%;
+    top: 275px;
+
+}
+.standup{
+    left: 24px;
+    top: 446px;
+
+}
+.fullstack{
+    left: 53%;
+    top: 446px;
+
+}
+.img-cont p{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+/* Text Black */
+
+color: #5A5A5A;
+margin-top: 10px;
+}

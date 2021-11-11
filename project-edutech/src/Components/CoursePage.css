@@ -1,0 +1,40 @@
+.buy-now-btn{
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
+
+.demo-video{
+    position: absolute;
+width: 363px;
+height: 206px;
+left: 24px;
+top: 114px;
+
+background: rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+.overview-book{
+    position: absolute;
+    top: 45%;
+}
+.overview-book a{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.02em;
+
+/* Primary 1 */
+
+color: #28B0DC;
+margin-left: 70px;
+
+}
+.book-demo{
+    position: absolute;
+    top:50%;
+    left: 24px;
+}
