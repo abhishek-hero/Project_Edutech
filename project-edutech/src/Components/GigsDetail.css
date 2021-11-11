@@ -38,12 +38,12 @@ color: #F2AC20;
 .gigs-title{
     position: absolute;
     left: 0.54%;
-    right: 68.55%;
+    right: 50.55%;
     top: 12.27%;
     bottom: 84.16%;
 
-font-family: Roboto;
-font-style: normal;
+
+
 font-weight: 500;
 font-size: 18px;
 line-height: 21px;
@@ -54,6 +54,7 @@ letter-spacing: 0.02em;
 /* Primary 1 */
 
 color: #28B0DC;
+text-align: left;
 }
 .gigs-detail p{
     position: absolute;
@@ -62,8 +63,7 @@ right: 0%;
 top: 18.4%;
 bottom: 62.18%;
 
-font-family: Roboto;
-font-style: normal;
+text-align: left;
 font-weight: normal;
 font-size: 16px;
 line-height: 19px;
@@ -84,6 +84,17 @@ color: #898989;
 }
 span p{
     margin-left: 10px;
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+/* 5A5A5A */
+
+color: #5A5A5A;
+
 }
 .span-btn{
     border: 1px solid #898989;
@@ -91,9 +102,15 @@ span p{
     margin-left: 10px;
     border-radius: 10px;
 }
+.span-btn p{
+    margin: 3px;
+}
 .app-btn button{
 margin-top: 0%;
 margin-left: 5px;
+}
+.chat-btn{
+    background-color:#898989;
 }
 
 .intern-name{

@@ -17,7 +17,7 @@ function Community() {
 
             <Carousel title="Gigs" background='/Images/mentor-profile.png' border='3px solid #28B0DC' radius='50%' width='90px' height='90px' name='Sai Pallavi' profession='Content Writer' />
 
-            <Internship   title="Internship Programs" radius='7px' width='150px' height='180px' />
+            <Internship title="Internship Programs" radius='7px' width='150px' height='180px' />
 
             <Button content='Notify Me'></Button>
 

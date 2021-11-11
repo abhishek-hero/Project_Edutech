@@ -42,7 +42,7 @@ function InternshipDetails() {
               </span>
               <div className="app-btn">
                  <button>Apply</button>
-                 <button>Chat</button> 
+                 <button className="chat-btn">Chat</button> 
               </div>
               </div>
              

@@ -1,8 +1,7 @@
 import './App.css';
 import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
 
-import {Community} from "./Components/Community"
-import {Home} from "./Components/Home"
+
 
 
 // Note: If you want to use bootstrap then import it like 
@@ -13,7 +12,6 @@ function App() {
   return (
     <div className="App">
 
-     <Community/>
 
     </div>
   );
