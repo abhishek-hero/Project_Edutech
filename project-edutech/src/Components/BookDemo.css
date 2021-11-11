@@ -1,0 +1,62 @@
+.bd-head h3{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.02em;
+
+/* 5A5A5A */
+
+color: #5A5A5A;
+text-align: left;
+
+}
+.demo-box{
+    display: flex;
+    width: 363px;
+    height: 60px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 7px 1px rgba(40, 176, 220, 0.15);
+margin-top: 15px;
+}
+.demo-box h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    
+    /* Text Black */
+    
+    color: #5A5A5A;
+    text-align: left;
+    padding: 15px;
+    margin-left: 15px;
+     
+}
+
+.live-btn{
+    background: #E20202;
+border-radius: 7px;
+width: 34px;
+height: 19px;
+padding: 5px;
+margin-top: 15px;
+margin-left: 50px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+/* FFFFFF */
+
+color: #FFFFFF;
+
+
+}
