@@ -61,6 +61,59 @@
     font-weight: 400;
 }
 
+.card_btn_top {
+    font-size: 8px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.card_btn_top button {
+    border: none;
+    font-size: 8px;
+    background-color: #E20202;
+    border-radius: 3px;
+    padding: 1px 5px;
+    color: white;
+    margin-left: 3px;
+}
+
+.card_btn_middle {
+    margin-left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 72px;
+    height: 42px;
+    margin-top: 8px;
+}
+
+.card_btn_bottom {
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+    font-size: 6px;
+    color: white;
+    margin-top: 8px;
+}
+
+.card_btn_bottom span {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    text-align: left;
+    line-height: 8px;
+}
+
+.card_btn_bottom img {
+    height: 25px;
+    border-radius: 50%;
+}
+
+
 @media (min-width: 790px) {
     .carousel_home {
         display: flex;

@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
 
 
+// import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
+import { Home } from './Components/Home'
 
 
 // Note: If you want to use bootstrap then import it like 
@@ -12,6 +14,7 @@ function App() {
   return (
     <div className="App">
 
+      <Home />
 
     </div>
   );

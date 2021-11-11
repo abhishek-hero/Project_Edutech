@@ -1,7 +1,7 @@
 import React from 'react'
-import './LiveCarousel.css'
+import './LiveCarouselBottom.css'
 
-export const LiveCarousel = ({ title, background, background1, background2, background3 }) => {
+export const LiveCarouselBottom = ({ title, background, background1, background2, background3 }) => {
     return (
 
         <>
@@ -16,6 +16,7 @@ export const LiveCarousel = ({ title, background, background1, background2, back
 
                     <div className="Livecarousel_div" style={{ backgroundImage: `url(${background1})` }}>
                         <div className='overlay'>
+                            <p className='carousel_text'>Public Speaking</p>
                         </div>
                     </div>
 
@@ -23,13 +24,17 @@ export const LiveCarousel = ({ title, background, background1, background2, back
                 <span>
 
                     <div className="Livecarousel_div" style={{ backgroundImage: `url(${background2})` }}>
-                        <div className='overlay'></div>
+                        <div className='overlay'>
+                            <p className='carousel_text'>Photo <br /> Editing</p>
+                        </div>
                     </div>
                 </span>
                 <span>
 
                     <div className="Livecarousel_div" style={{ backgroundImage: `url(${background3})` }}>
-                        <div className='overlay'></div>
+                        <div className='overlay'>
+                            <p className='carousel_text'>Intro to Programming</p>
+                        </div>
                     </div>
 
                 </span>

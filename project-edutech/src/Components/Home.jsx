@@ -4,15 +4,19 @@ import { Banner } from './Banner'
 import { Carousel } from './Carousel'
 import { CarouselCard } from './CarouselCard'
 import { Button } from './Button'
-import { LiveCarousel } from './LiveCarousel'
+import { LiveCarouselTop } from './LiveCarouselTop'
+import { Header } from './Header'
+import { Footer } from './Footer'
+import { LiveCarouselBottom } from './LiveCarouselBottom'
 
 export const Home = () => {
     return (
         <div>
 
+            <Header />
             <Banner />
 
-            <LiveCarousel title="Take the free live demo" background1='/Images/camera_carousel.png' background2='/Images/camera_carousel.png' background3='/Images/camera_carousel.png'></LiveCarousel>
+            <LiveCarouselTop title="Take the free live demo" background1='/Images/camera_carousel.png' background2='/Images/camera_carousel.png' background3='/Images/camera_carousel.png' />
 
             <Carousel title="Who are your mentors" background='/Images/mentor-profile.png' border='3px solid #28B0DC' radius='50%' width='90px' height='90px' name='Sai Pallavi' profession='Content Writer' />
 
@@ -29,9 +33,13 @@ export const Home = () => {
 
             <CarouselCard card_footer1='Web Development' card_footer2='Android Development' svg1='/Icons/webDevelopment.svg' svg2='/Icons/android.svg' title="Technical Courses" radius='7px' width='150px' height='180px' />
 
-            <LiveCarousel title="Try a free course" background1='/Images/freeCourse1.png' background2='/Images/freeCourse2.png' background3='/Images/freeCourse2.png'></LiveCarousel>
+            <LiveCarouselBottom title="Try a free course" background1='/Images/freeCourse1.png' background2='/Images/freeCourse2.png' background3='/Images/freeCourse2.png' />
 
             <Button content='Join a course'></Button>
+
+            <Footer />
+
+            <div className='spaceDiv'></div>
 
         </div>
     )

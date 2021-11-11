@@ -21,7 +21,7 @@
     color: #28B0DC;
 }
 
-.carousel_home {
+.carousel_home1 {
     display: flex;
     margin-left: 15px;
     overflow-x: scroll;
@@ -31,7 +31,7 @@
     margin: 10px 9px;
 }
 
-.carousel_home::-webkit-scrollbar{
+.carousel_home1::-webkit-scrollbar{
     display: none;
 }
 
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: 790px) {
-    .carousel_home {
+    .carousel_home1 {
         display: flex;
         margin-left: 75px;
         height: 200px;

@@ -14,14 +14,14 @@ export const CarouselCard = ({ title, radius, width, height, svg1, svg2a, svg2, 
                 <span>
                     <div style={{ borderRadius: radius, width: width, height: height }} className="carousel_div" alt=''>
                         <img className='main_svg' src={svg1} alt="" />
-                        <p>{card_footer1}</p>
+                        <p className='app_info' >{card_footer1}</p>
                     </div>
                 </span>
                 <span>
                     <div style={{ borderRadius: radius, width: width, height: height }} className="carousel_div" alt=''>
                         <img className='main_svg' src={svg2} alt="" />
                         <span><img src={svg2a} alt="" /></span>
-                        <p>{card_footer2}</p>
+                        <p className='app_info'>{card_footer2}</p>
                     </div>
                 </span>
                 <span>
