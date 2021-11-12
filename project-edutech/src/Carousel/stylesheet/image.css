@@ -1,0 +1,22 @@
+.carousel-img{
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    color: #5A5A5A;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-img img{
+    margin-top: 100px;
+}
+.carousel-img>p:nth-child(2){
+    margin:0px 0px 9px;
+}
+
+.carousel-img>p:nth-child(3){
+    font-size: 24px;
+    line-height: 32px;
+}
