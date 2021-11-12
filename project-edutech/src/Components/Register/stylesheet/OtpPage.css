@@ -1,0 +1,29 @@
+.enterOtp{
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+}
+
+
+.enterOtp p:nth-child(1){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em; 
+    color: #5A5A5A;
+    margin-bottom: 40px;
+}
+
+.enterOtp button:nth-child(3){
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #5A5A5A;
+    margin: 28px 0px;
+    background-color: white;
+    border: none;
+}

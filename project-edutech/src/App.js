@@ -15,46 +15,46 @@ import AllDemoPage from "./components/TakeAFreeLiveDemo/AllDemoPage";
 // import UpcomingDemoPage from "./components/TakeAFreeLiveDemo/UpcomingDemoPage";
 import TodayDemoPage from "./components/TakeAFreeLiveDemo/TodayDemoPage";
 
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./Components/Home/Home";
+import { MentorPage } from "./Components/Mentor/MentorPage";
+// import { LoginPage } from './Components/Login/LoginPage'
+// import { RegisterNow } from './Components/Register/RegisterNow'
+// import { Carousel } from './Carousel/Carousel'
+// import { OtpPage } from './Components/Register/OtpPage'
+import SignUp from "./Components/Register/SignUp";
+import Otp from "./Components/Register/Otp";
+
+import "./App.css";
+import { Home } from "./Components/Home";
+
 function App() {
   return (
-    <div className="App">
-      {/* <h1>Hello</h1> */}
-      {/* <AllDemoPage /> */}
-      {/* <RecordedDemoPage /> */}
-      {/* <UpcomingDemoPage /> */}
-      {/* <TodayDemoPage /> */}
-      {/* //   <MyCoursesAll /> */}
-      {/* <MyCoursesOngoing /> */}
-      {/* <MyCoursesUpcoming /> */}
-      {/* <TechnicalCoursesDisplayPage /> */}
-      {/* <CreativeCoursesDisplayPage /> */}
-      <AllCourses />
-    </div>
-    // <Router>
-    //   <div className="App">
-    //     {/* <h1>Hello</h1> */}
-    //     {/* <TechnicalCourses /> */}
-    //     {/* <CreativeCourses /> */}
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/verify">
+            {/* <OtpPage></OtpPage> */}
+            <Otp></Otp>
+          </Route>
 
-    //     <Switch>
-    //       <Route path="/my-courses-ongoing">
-    //         <MyCoursesOngoing />
-    //       </Route>
-    //       <Route path="/my-courses-upcoming">
-    //         <MyCoursesUpcoming />
-    //       </Route>
-    //       <Route path="/my-courses-all">
-    //         <MyCoursesAll />
-    //       </Route>
-    //       <Route path="/my-courses">
-    //         <MyCoursesAll />
-    //       </Route>
-    //     </Switch>
-    //   </div>
-    // </Router>
+          <Route path="/register">
+            {/* <RegisterNow /> */}
+            <SignUp></SignUp>
+          </Route>
+
+          <Route path="/mentors">
+            <MentorPage></MentorPage>
+          </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
 export default App;
-
-// box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.25);
