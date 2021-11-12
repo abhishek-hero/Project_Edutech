@@ -1,0 +1,23 @@
+.home_carousel_title {
+    width: 88%;
+    text-align: left;
+    margin: auto;
+    color: #5A5A5A;
+    margin-top: -10px;
+}
+
+.home_carousel_title strong {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.home_carousel_title small {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.spaceDiv {
+    height: 100px;
+}
