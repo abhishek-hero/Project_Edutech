@@ -1,14 +1,15 @@
 import React from 'react'
 import "./GigsDetail.css"
 import {Footer} from "./Footer"
+import {Button} from "./Button"
 
-function InternshipDetails() {
+function GigsDetails() {
     return (
         <div>
           <div className="gigs"></div>
           <div className="gigs-div">
-              <div className="intern-name">Internship Name</div>
-              <div className="intern-title">About the Internship</div>
+              <div className="gigs-name">Gig Name</div>
+              <div className="gigs-title">About the Gig</div>
               <div className="gigs-detail">
                <p> Lorem ipsum dolor sit amet, consectetur elit.<br/>
                  Proin finibus vitae turpis non iaculis. 
@@ -41,8 +42,7 @@ function InternshipDetails() {
                 <div className="span-btn"><p>500</p></div>
               </span>
               <div className="app-btn">
-                 <button>Apply</button>
-                 <button className="chat-btn">Chat</button> 
+                 <Button content="Apply"/>
               </div>
               </div>
              
@@ -53,4 +53,4 @@ function InternshipDetails() {
     )
 }
 
-export  {InternshipDetails}
+export  {GigsDetails}

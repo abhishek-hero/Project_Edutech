@@ -1,9 +1,9 @@
 import React from 'react'
 import "./CoursePage.css"
-import {Button} from "./Button"
+import {Button} from "../Button"
 import { Overview } from './Overview'
 import {BookDemo} from "./BookDemo"
-import { Home } from './Home'
+import { Home } from '../Home'
 
 function CoursePage() {
     return (

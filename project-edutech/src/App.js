@@ -3,7 +3,10 @@ import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
 
 
 // import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
-import { Home } from './Components/Home'
+import {Community} from "./Components/Community/Community"
+// import {GigsDetails} from "./Components/GigsDetails"
+// import {InternshipDetails} from "./Components/InternshipDetails"
+// import {CoursePage} from "./Components/Community/CoursePage"
 
 
 // Note: If you want to use bootstrap then import it like 
@@ -14,7 +17,7 @@ function App() {
   return (
     <div className="App">
 
-      <Home />
+      <Community/>
 
     </div>
   );

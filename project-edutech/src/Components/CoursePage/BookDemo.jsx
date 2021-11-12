@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BookDemo.css"
-import {Button} from "./Button"
+import {Button} from "../Button"
 
 function BookDemo() {
     return (
