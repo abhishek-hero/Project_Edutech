@@ -24,12 +24,16 @@ font-size: 20px;
 line-height: 23px;
 text-align: center;
 letter-spacing: 0.02em;
+text-decoration: none;
 
 /* Primary 1 */
 
 color: #28B0DC;
 margin-left: 70px;
 
+}
+.overview-book a:hover{
+    border-bottom: 5px solid #F2AC20;
 }
 .book-demo{
     position: absolute;
