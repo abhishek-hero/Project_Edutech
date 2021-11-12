@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./CoursePage.css"
-import {Button} from "../Button"
+import {Button} from "../Home/Button"
 import { Overview } from './Overview'
 import {BookDemo} from "./BookDemo"
-import { Home } from '../Home'
+import {Footer} from "../Home/Footer"
+
 
 function CoursePage() {
+    const [overvies, setOverview] = useState(true)
     return (
         <div>
             <div className="top-section">
@@ -17,12 +19,14 @@ function CoursePage() {
 
             </div>
             <div className="overview-book">
-               <a href="">Over View</a>
-               <a href="">Book a Demo</a> 
+               <a onClick={()=>setOverview(true)}>Over View</a>
+               <a onClick={()=>setOverview(false)}>Book a Demo</a> 
             </div>
             <div className="book-demo">
-                <BookDemo/>
+                {overvies ? <Overview/> : <BookDemo/> }
+                
             </div>
+            <Footer/>
         </div>
     )
 }

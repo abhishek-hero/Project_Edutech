@@ -1,53 +1,38 @@
-.carousel_heading {
+.intsp_heading {
     width: 88%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     margin-bottom: 5px;
-    margin-top: 10px;
-
+    margin: 24px;
 }
 
-.carousel_title {
+.intsp_title {
     font-size: 20px;
     font-weight: 500;
     color: #5A5A5A;
 }
 
-.carousel_link {
+.intsp_link {
     font-size: 17px;
     font-weight: 400;
     color: #28B0DC;
 }
 
-.carousel_home {
+.intsp_home {
     display: flex;
     margin-left: 15px;
     overflow-x: scroll;
 }
 
-.Livecarousel_div {
-    height: 105px;
-    width: 130px;
-    margin: 10px 9px;
-    border-radius: 15px;
-    position: relative;
-    background-size:cover;
-    background-repeat: no-repeat;
+
+.intsp_div {
+    background-color: #000000;
+    margin: 0 9px;
+   
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    border-radius: 15px;
-}
-
-.carousel_home::-webkit-scrollbar{
+.intsp_home::-webkit-scrollbar{
     display: none;
 }
 
@@ -61,32 +46,54 @@
     font-weight: 400;
 }
 
-.carousel_text {
-    font-size: 18px;
-    margin-top: 40%;
-    text-align: left;
-    margin-left: 10px;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+.app_info {
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 @media (min-width: 790px) {
-    .carousel_home {
+    .intsp_home {
         display: flex;
         margin-left: 75px;
         height: 200px;
         overflow-x: scroll;
     }
     
-    .Livecarousel_div {
+    .intsp_div {
         height: 95%;
         width: 300px;
         border-radius: 15px;
         margin: 10px 10px;
     }
 
-    .carousel_home::-webkit-scrollbar{
+    .intsp_home::-webkit-scrollbar{
         display: none;
     }
+}
+
+
+.second1_svg {
+    position: absolute;
+    top: 1360px;
+    left: 105px;
+}
+
+.second2_svg {
+    position: absolute;
+    top: 1360px;
+    left: 120px;
+}
+
+.second3_svg {
+    position: absolute;
+    top: 1377px;
+    left: 105px;
+}
+
+.second4_svg {
+    position: absolute;
+    top: 1377px;
+    left: 120px;
 }

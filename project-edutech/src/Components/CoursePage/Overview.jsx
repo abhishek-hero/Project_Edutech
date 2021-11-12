@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Overview.css"
-import {Footer} from "./Footer"
+
 
 
 function Overview() {
@@ -23,7 +23,7 @@ function Overview() {
                    Sodales congue. Aenean tincidunt erat non </p>
             </div>
 
-            <Footer/>
+            
             
         </div>
     )

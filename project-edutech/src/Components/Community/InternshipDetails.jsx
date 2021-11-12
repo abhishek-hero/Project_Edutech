@@ -1,16 +1,16 @@
 import React from 'react'
 import "./GigsDetail.css"
-import {Footer} from "./Footer"
-import {Button} from "./Button"
+import {Footer} from "../Home/Footer"
+import {Button} from "../Home/Button"
 
 function InternshipDetails() {
     return (
         <div>
-          <div className="gigs"></div>
-          <div className="gigs-div">
-              <div className="intern-name">Internship Name</div>
+          <div className="gigd"><img src="./Images/fashiondesiner.png"/></div>
+          <div className="gigd-div">
+              <div className="intern-name">Fashion Desiner</div>
               <div className="intern-title">About the Internship</div>
-              <div className="gigs-detail">
+              <div className="gigd-detail">
                <p> Lorem ipsum dolor sit amet, consectetur elit.<br/>
                  Proin finibus vitae turpis non iaculis. 
                  Quisque<br/> nec erat eu diam egestas dapibus nec

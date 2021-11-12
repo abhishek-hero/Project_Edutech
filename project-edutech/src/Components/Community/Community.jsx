@@ -2,12 +2,12 @@ import React from 'react'
 
 import {WelCome} from "./WelCome"
 
- import { Carousel } from '../Home/Carousel'
+ import {Gigs } from './Gigs'
 
-// import {Internship} from "../Internship"
-// import {Button} from "../Button"
+ import {Internship} from "./Internship"
+ import {Button} from "../Home/Button"
 
-// import {Footer} from "../Footer"
+ import {Footer} from "../Home/Footer"
 
 function Community() {
     return (
@@ -15,13 +15,13 @@ function Community() {
 
             <WelCome/>
 
-            <Carousel title="Gigs" background='/Images/mentor-profile.png' border='3px solid #28B0DC' radius='50%' width='90px' height='90px' name='Sai Pallavi' profession='Content Writer' />
+            <Gigs title="Gigs" background='/Images/gigsphoto.png' border='3px solid #28B0DC' radius='50%' width='90px' height='90px' name='Photography'/>
 
-            {/* <Internship title="Internship Programs" radius='7px' width='150px' height='180px' />
+            <Internship title="Internship Programs" radius='7px' width='150px' height='180px' svg1="Images/internshipphoto.png" />
 
             <Button content='Notify Me'></Button>
 
-            <Footer/> */}
+            <Footer/>
 
 
         </div>
