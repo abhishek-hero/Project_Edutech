@@ -1,0 +1,96 @@
+/* .carousel .slide img {
+    margin-top: 100px;
+    width: 50%;
+    vertical-align: top;
+    border: 0;
+}
+
+.carousel .carousel-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 90%);
+    color: #fff;
+    display: none;
+}
+
+.carousel .thumbs {
+    transition: all .15s ease-in;
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    list-style: none;
+    white-space: nowrap;
+    display: none;
+}
+
+.main-slider>div>p{
+    margin-top: -100px;
+} */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25,12,41);
+} */
+.slider {
+    border: 1px solid red;
+    width: 90vw;
+    margin: auto;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.08s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    background-color: red;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
+
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.01s ease;
+    margin: 5px;
+}
+
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    
+    background-color: white;
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    background-color: white;
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    background-color: white;
+    margin-left: -200%;
+}

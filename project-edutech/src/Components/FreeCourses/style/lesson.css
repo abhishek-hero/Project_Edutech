@@ -1,0 +1,19 @@
+.course-lesson {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 20px;
+}
+.course-lesson p{
+    width: 80%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: hsl(0, 0%, 35%);
+    margin: 20px 0px;
+    margin-left: 40px;
+}
+.course-lesson img{
+    padding: 10px 0px;
+    padding-left: 10px;
+}

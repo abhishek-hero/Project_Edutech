@@ -1,25 +1,59 @@
-import './App.css';
-import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MyCoursesAll from "./components/MyCoursesSection/MyCoursesAll";
+import MyCoursesOngoing from "./components/MyCoursesSection/MyCoursesOngoing";
+import MyCoursesUpcoming from "./components/MyCoursesSection/MyCoursesUpcoming";
+// import CourseViewCard from "./components/Course-view-card/CourseViewCard";
+import CreativeCoursesDisplayPage from "./components/CreativeCoursesDisplayPage/CreativeCoursesDisplayPage";
+import TechnicalCoursesDisplayPage from "./components/TechnicalCoursesDisplayPage/TechnicalCoursesDisplayPage";
+import HeaderCategoryBar from "./components/CoursesSection/HeaderCategoryBar";
+import AllCourses from "./components/CoursesSection/AllCourses";
+import CreativeCourses from "./components/CoursesSection/CreativeCourses";
+import TechnicalCourses from "./components/CoursesSection/TechnicalCourses";
+import AllDemoPage from "./components/TakeAFreeLiveDemo/AllDemoPage";
+// import RecordedDemoPage from "./components/TakeAFreeLiveDemo/RecordedDemoPage";
+// import UpcomingDemoPage from "./components/TakeAFreeLiveDemo/UpcomingDemoPage";
+import TodayDemoPage from "./components/TakeAFreeLiveDemo/TodayDemoPage";
 
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./Components/Home/Home";
+import { MentorPage } from "./Components/Mentor/MentorPage";
+// import { LoginPage } from './Components/Login/LoginPage'
+// import { RegisterNow } from './Components/Register/RegisterNow'
+// import { Carousel } from './Carousel/Carousel'
+// import { OtpPage } from './Components/Register/OtpPage'
+import SignUp from "./Components/Register/SignUp";
+import Otp from "./Components/Register/Otp";
 
-// import { BrowserRouter, Router, Switch, Route } from 'react-router-dom'
-import {Community} from "./Components/Community/Community"
-// import {GigsDetails} from "./Components/GigsDetails"
-// import {InternshipDetails} from "./Components/InternshipDetails"
-// import {CoursePage} from "./Components/Community/CoursePage"
-
-
-// Note: If you want to use bootstrap then import it like 
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-// Path may change according to file
+import "./App.css";
+import { Home } from "./Components/Home";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/verify">
+            {/* <OtpPage></OtpPage> */}
+            <Otp></Otp>
+          </Route>
 
-      <Community/>
+          <Route path="/register">
+            {/* <RegisterNow /> */}
+            <SignUp></SignUp>
+          </Route>
 
-    </div>
+          <Route path="/mentors">
+            <MentorPage></MentorPage>
+          </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
