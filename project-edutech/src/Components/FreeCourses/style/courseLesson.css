@@ -1,0 +1,21 @@
+.course-lesson-container{
+    width: 88vw;
+    margin: auto;
+}
+
+.back-arrow{
+    margin-top: 34px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: white;
+}
+
+.course-lesson-container div:nth-child(3){
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #5A5A5A;
+}
