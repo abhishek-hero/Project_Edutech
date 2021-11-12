@@ -1,0 +1,17 @@
+.mentor_main_div {
+    width: 90px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.mentor_main_div img {
+    border-radius: 50%;
+    width: 90px;
+    height: 94.26px;
+    border: none;
+    margin: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    border: 3px solid #6ba1b3;
+}
