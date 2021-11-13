@@ -46,7 +46,7 @@ import SignUp from "./Components/Register/SignUp";
 import Otp from "./Components/Register/Otp";
 
 //Community pages
-import {Community} from "./Components/Community/Community"
+import {Community} from "./Components/Community/"
  import {GigsDetails} from "./Components/Community/GigsDetails"
  import {InternshipDetails} from "./Components/Community/InternshipDetails"
  import {CoursePage} from "./Components/CoursePage/CoursePage"
