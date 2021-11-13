@@ -1,0 +1,16 @@
+.welcome-div {
+    position: relative;
+    width: 250px;
+    height: 92px;
+    left: 25px;
+    top: 52px;
+    margin-bottom: 80px;
+}
+
+.welcome-msg {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #898989;
+}

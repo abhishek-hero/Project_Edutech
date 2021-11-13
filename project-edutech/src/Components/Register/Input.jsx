@@ -1,42 +1,45 @@
-import { useState } from 'react'
-import './stylesheet/Input.css'
-import axios from 'axios'
+import { useState } from "react";
+import "./stylesheet/Input.css";
+import axios from "axios";
 
+export const Input = () => {
+  const [mobile, setMobile] = useState("");
+  // const [username, setUsername] = useState('')
 
-export const Input = ({ hashHandleChange }) => {
+  const handleChange = (e) => {
+    setMobile(e.target.value);
+  };
 
-    // const { value, hashHandleChange } = props;
+  const handleClick = async (req, res) => {
+    console.log("hello");
 
-    const [mobile, setMobile] = useState('')
+    const { data } = await axios.post("http://localhost:3001/users", {
+      // name: username,
+      mobile: mobile,
+    });
 
-    const handleChange = (e) => {
-        setMobile(e.target.value)
-    }
+    window.location = "/verify";
+  };
 
-
-    const handleClick = async (req, res) => {
-
-        axios
-            .post('http://localhost:3001/register', {
-                mobile: mobile
-            })
-            .then(function (res) {
-                console.log(res.data.otp);
-                const hash = res.data.hash;
-                // hashHandleChange(hash);
-            });
-    }
-
-
-    return (
-        <>
-            <div className="input_group">
-                <span className="phone_code" id="basic-addon1">+91</span>
-                <input onChange={handleChange} type='Number' placeholder="Enter mobile number" value={mobile} className="input_phonenumber" required />
-            </div>
-
-            <button onClick={handleClick} className="otp_btn">Send OTP</button>
-
-        </>
-    )
-}
+  return (
+    <>
+      <input type="text" className="input_name" placeholder="Enter name" />
+      <div className="input_group">
+        <span className="phone_code" id="basic-addon1">
+          +91
+        </span>
+        <input
+          onChange={handleChange}
+          type="Number"
+          placeholder="Enter mobile number"
+          value={mobile}
+          className="input_phonenumber"
+          required
+        />
+      </div>
+      <button onClick={handleClick} className="otp_btn">
+        Send OTP
+      </button>
+    </>
+  );
+};
