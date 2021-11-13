@@ -1,0 +1,20 @@
+.courses{
+   position: relative;
+   margin-bottom: 19px;
+}
+.courses img{
+   width: 171px; 
+   height: 105px;
+   filter: brightness(65%);
+}
+.courses>p{
+    position: absolute;
+    top: 55px;
+    left: 14px;
+    bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
