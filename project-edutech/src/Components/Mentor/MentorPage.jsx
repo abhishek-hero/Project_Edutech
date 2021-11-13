@@ -1,7 +1,7 @@
 import React from 'react'
 import './Styles/MentorPage.css'
 import { Mentor } from './Mentor'
-import { Footer } from './Footer'
+import { Footer } from '../Home/Footer'
 
 export const MentorPage = () => {
     return (
