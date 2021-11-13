@@ -1,6 +1,6 @@
 import './stylesheet/image.css'
 
-export const Image = ({image,text,text1,text2}) => {
+export const Image = ({ image, text, text1, text2 }) => {
     return (
         <div className="carousel-img">
             <img src={image} alt="" />

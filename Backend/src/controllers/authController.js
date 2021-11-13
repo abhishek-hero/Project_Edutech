@@ -1,17 +1,19 @@
 const User = require('../models/userModel')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
+const { body, validationResult } = require('express-validator');
 
-const accountSid = process.env.ACCOUNT_SID
-const authToken = process.env.AUTH_TOKEN
-const client = require('twilio')(accountSid, authToken)
-const crypto = require('crypto')
 
-const JWT_AUTH_TOKEN = process.env.JWT_AUTH_TOKEN
-const JWT_REFRESH_TOKEN = process.env.JWT_REFRESH_TOKEN
-const smsKey = process.env.SMS_SECRET_KEY
-let refreshTokens = []
 
+// const accountSid = process.env.ACCOUNT_SID
+// const authToken = process.env.AUTH_TOKEN
+// const client = require('twilio')(accountSid, authToken)
+// const crypto = require('crypto')
+
+// const JWT_AUTH_TOKEN = process.env.JWT_AUTH_TOKEN
+// const JWT_REFRESH_TOKEN = process.env.JWT_REFRESH_TOKEN
+// const smsKey = process.env.SMS_SECRET_KEY
+// let refreshTokens = []
 
 
 
@@ -21,131 +23,154 @@ let refreshTokens = []
 
 const register = async (req, res) => {
 
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: "Please Enter Valid Number" });
+    }
+
     const mobile = req.body.mobile
-    const otp = Math.floor(100000 + Math.random() * 900000)
-    const ttl = 2 * 60 * 1000
-    const expires = Date.now() + ttl
-    const data = `${mobile}.${otp}.${expires}`
-    const hash = crypto.createHmac('sha256', smsKey).update(data).digest('hex')
-    const fullhash = `${hash}.${expires}`
 
-    client.messages.create({
-        body: `Your one time password for Edutech Login is ${otp}`,
-        from: +12059526786,
-        to: `${+91}${mobile}`
-    }).then((messages) => console.log(messages)).catch((err) => console.error(err))
 
-    res.status(200).send({ mobile, hash: fullhash, otp })
+    // ===================================================================================================
+    // const otp = Math.floor(100000 + Math.random() * 900000)
+    // const ttl = 2 * 60 * 1000
+    // const expires = Date.now() + ttl
+    // const data = `${mobile}.${otp}.${expires}`
+    // const hash = crypto.createHmac('sha256', smsKey).update(data).digest('hex')
+    // const fullhash = `${hash}.${expires}`
+
+    // client.messages.create({
+    //     body: `Your one time password for Edutech Login is ${otp}`,
+    //     from: +12059526786,
+    //     to: `${+91}${mobile}`
+    // }).then((messages) => console.log(messages)).catch((err) => console.error(err))
+
+    // res.status(200).send({ mobile, hash: fullhash, otp })
+
+    // =========================================================================================================
+
+
+
+
 
     // check if user with same mobile already exists
 
-    // let user;
+    let user;
 
-    // try {
+    try {
 
-    //     user = User.findOne({ mobile: mobile })
+        user = User.findOne({ mobile: mobile })
 
-    //     // if yes then throw an error
-    //     if (user) return res.status(400).send({ message: "Mobile no. already exists." })
+        // if yes then throw an error
+        if (user) return res.status(400).send({ message: "Mobile no. already exists." })
 
-    //     // else create user with that mobile no
-    //     user = User.create({
-    //         mobile
-    //     })
+        // else create user with that mobile no
+        user = User.create({
+            mobile
+        })
 
-    //     // we will create a token
+        // we will create a token
 
-    //     const token = newToken(user)
+        const token = newToken(user)
 
-    //     // token will be sent to frontend
+        // token will be sent to frontend
 
-    //     res.status(200).send({ user, token })
+        res.status(200).send({ user, token })
 
-    // } catch (err) {
+    } catch (err) {
 
-    //     return res.status(500).send({ message: "Sorry for inconvenience please try again later" })
-    // }
-}
-
-
-const verify = async (req, res) => {
-    const mobile = req.body.mobile;
-    const hash = req.body.hash;
-    const otp = req.body.otp;
-    let [hashValue, expires] = hash.split('.')
-
-    let now = Date.now()
-    if (now > parseInt(expires)) {
-        return res.status(504).send({ msg: `Timeout Please try again` })
-    }
-
-    let data = `${mobile}.${otp}.${expires}`
-    let newCalculatedHash = crypto.createHmac('sha256', smsKey).update(data).digest('hex')
-
-    if (newCalculatedHash === hashValue) {
-
-        // refreshTokens.push(refreshToken)
-
-        // return res.status(202).send({ msg: "User confirmed" })
-        const accessToken = jwt.sign({ data: mobile }, JWT_AUTH_TOKEN, { expiresIn: '30s' })
-        const refreshToken = jwt.sign({ data: mobile }, JWT_REFRESH_TOKEN, { expiresIn: '1y' })
-
-        res.status(202).
-            cookie('accessToken', accessToken, { expiresIn: new Date(new Date().getTime() * 30 * 1000), sameSite: 'strict', httpOnly: true })
-            .cookie('authSession', true, { expiresIn: new Date(new Date().getTime() * 30 * 1000) })
-            .cookie('refreshToken', refreshToken, { expiresIn: new Date(new Date().getTime() * 3557600000), sameSite: 'strict', httpOnly: true }).send({ msg: 'Device verified' })
-            .cookie('refreshTokenId', true, { expiresIn: new Date(new Date().getTime() * 3557600000) })
-    } else {
-        return res.status(400).send({ verification: false, msg: "Incorrect otp" })
+        return res.status(500).send({ message: "Sorry for inconvenience please try again later" })
     }
 }
 
 
-async function authenticate(req, res, next) {
-    const accessToken = req.cookie.accessToken
 
-    jwt.verify(accessToken, JWT_AUTH_TOKEN, async (err, mobile) => {
-        if (mobile) {
-            req.mobile = mobile;
-            next()
-        } else if (err.message === 'TokenExpiredError') {
-            return res.status(403).send({ success: false, msg: "Access Token Expired" })
-        } else {
-            console.error(err)
-            res.status(403).send({ err, msg: 'User Not Authenticated' })
-        }
-    })
-}
+// ===========================================================================================
+// =============================================================================================
+// ===========================================================================================
 
+// const verify = async (req, res) => {
+//     const mobile = req.body.mobile;
+//     const hash = req.body.hash;
+//     const otp = req.body.otp;
+//     let [hashValue, expires] = hash.split('.')
 
-const refresh = async (req, res) => {
-    const refreshToken = req.cookies.refreshToken
+//     let now = Date.now()
+//     if (now > parseInt(expires)) {
+//         return res.status(504).send({ msg: `Timeout Please try again` })
+//     }
 
-    if (!refreshToken) return res.status(403).send({ msg: 'Refresh Token not Found, please login again' })
+//     let data = `${mobile}.${otp}.${expires}`
+//     let newCalculatedHash = crypto.createHmac('sha256', smsKey).update(data).digest('hex')
 
-    if (!refreshTokens.includes(refreshToken)) return res.status(403).send({ msg: 'Refresh Token Blocked' })
+//     if (newCalculatedHash === hashValue) {
 
-    jwt.verify(refreshToken, JWT_REFRESH_TOKEN, (err, mobile) => {
-        if (!err) {
-            const accessToken = jwt.sign({ data: mobile }, JWT_AUTH_TOKEN, { expiresIn: '30s' })
+//         // refreshTokens.push(refreshToken)
 
-            res.status(202).
-                cookie('accessToken', accessToken, { expiresIn: new Date(new Date().getTime() * 30 * 1000), sameSite: 'strict', httpOnly: true })
-                .cookie('authSession', true, { expiresIn: new Date(new Date().getTime() * 30 * 1000) })
-                .send({ previousSessionExpiry: true, success: true })
-        } else {
-            return res.status(403).send({ success: false, msg: "Invalid Refresh Token" })
-        }
-    })
+//         // return res.status(202).send({ msg: "User confirmed" })
+//         const accessToken = jwt.sign({ data: mobile }, JWT_AUTH_TOKEN, { expiresIn: '30s' })
+//         const refreshToken = jwt.sign({ data: mobile }, JWT_REFRESH_TOKEN, { expiresIn: '1y' })
 
-}
+//         res.status(202).
+//             cookie('accessToken', accessToken, { expiresIn: new Date(new Date().getTime() * 30 * 1000), sameSite: 'strict', httpOnly: true })
+//             .cookie('authSession', true, { expiresIn: new Date(new Date().getTime() * 30 * 1000) })
+//             .cookie('refreshToken', refreshToken, { expiresIn: new Date(new Date().getTime() * 3557600000), sameSite: 'strict', httpOnly: true }).send({ msg: 'Device verified' })
+//             .cookie('refreshTokenId', true, { expiresIn: new Date(new Date().getTime() * 3557600000) })
+//     } else {
+//         return res.status(400).send({ verification: false, msg: "Incorrect otp" })
+//     }
+// }
 
 
-const logout = async (req, res) => {
-    res.clearCookie('refreshToken').clearCookie('accessToken').clearCookie('authSession').clearCookie('refreshTokenId').send('User Logged Out')
-}
+// async function authenticate(req, res, next) {
+//     const accessToken = req.cookie.accessToken
+
+//     jwt.verify(accessToken, JWT_AUTH_TOKEN, async (err, mobile) => {
+//         if (mobile) {
+//             req.mobile = mobile;
+//             next()
+//         } else if (err.message === 'TokenExpiredError') {
+//             return res.status(403).send({ success: false, msg: "Access Token Expired" })
+//         } else {
+//             console.error(err)
+//             res.status(403).send({ err, msg: 'User Not Authenticated' })
+//         }
+//     })
+// }
 
 
+// const refresh = async (req, res) => {
+//     const refreshToken = req.cookies.refreshToken
+
+//     if (!refreshToken) return res.status(403).send({ msg: 'Refresh Token not Found, please login again' })
+
+//     if (!refreshTokens.includes(refreshToken)) return res.status(403).send({ msg: 'Refresh Token Blocked' })
+
+//     jwt.verify(refreshToken, JWT_REFRESH_TOKEN, (err, mobile) => {
+//         if (!err) {
+//             const accessToken = jwt.sign({ data: mobile }, JWT_AUTH_TOKEN, { expiresIn: '30s' })
+
+//             res.status(202).
+//                 cookie('accessToken', accessToken, { expiresIn: new Date(new Date().getTime() * 30 * 1000), sameSite: 'strict', httpOnly: true })
+//                 .cookie('authSession', true, { expiresIn: new Date(new Date().getTime() * 30 * 1000) })
+//                 .send({ previousSessionExpiry: true, success: true })
+//         } else {
+//             return res.status(403).send({ success: false, msg: "Invalid Refresh Token" })
+//         }
+//     })
+
+// }
+
+
+// const logout = async (req, res) => {
+//     res.clearCookie('refreshToken').clearCookie('accessToken').clearCookie('authSession').clearCookie('refreshTokenId').send('User Logged Out')
+// }
+
+
+
+// ======================================================================================================
+// =========================================================================================================
+// ======================================================================================================
 
 
 const login = async (req, res) => {

@@ -1,7 +1,9 @@
 import React from 'react'
 import './Styles/Mentor.css'
+import axios from 'axios'
 
 export const Mentor = () => {
+
     return (
         <div className='mentor_main_div'>
 
