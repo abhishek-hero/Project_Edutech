@@ -52,7 +52,7 @@ export const OtpPage = () => {
   // alert(generatedOtp)
 
   const handleClick = async () => {
-    window.location = "/home";
+    window.location = "/HomeAfterPayment";
   };
   return (
     <>

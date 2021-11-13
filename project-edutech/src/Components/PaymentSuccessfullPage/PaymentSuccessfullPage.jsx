@@ -1,5 +1,6 @@
 import React from "react";
 import "./PaymentSuccessfullPage.css";
+import { Link } from "react-router-dom";
 
 const PaymentSuccessfullPage = () => {
   return (
@@ -16,7 +17,10 @@ const PaymentSuccessfullPage = () => {
         <div className="InnerDivText">
           You have successfully registered for the course.
         </div>
-        <button className="Inner_ok_button">OK</button>
+
+        <Link to="/HomeAfterPayment">
+          <button className="Inner_ok_button">OK</button>
+        </Link>
       </div>
     </div>
   );

@@ -12,10 +12,9 @@ function CoursePage() {
     <div>
       <div className="top-section">
         <div className="buy-now-btn">
-          {/* <Link to="/">
+          <Link to="/Payment_page1">
             <Button content="Buy Now" />
-          </Link> */}
-          <Button content="Buy Now" />
+          </Link>
         </div>
       </div>
       <div className="demos-video">

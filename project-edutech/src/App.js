@@ -7,19 +7,18 @@ import MyCoursesOngoing from "./Components/MyCoursesSection/MyCoursesOngoing";
 import MyCoursesUpcoming from "./Components/MyCoursesSection/MyCoursesUpcoming";
 import MyCoursesCompleted from "./Components/MyCoursesSection/MyCoursesCompleted";
 
-import { Project_page1 } from './Components/Project_page1';
-import { Project_page2 } from './Components/Project_page2';
-import { Project_page3 } from './Components/Project_page3';
-import { Profile_page1 } from './Components/Profile_page1';
-import { Profile_subhead } from './Components/Profile_subhead';
-import { Profile_page2 } from './Components/Profile_page2';
-import { Profile_page3 } from './Components/Profile_page3';
-import { Profile_page4 } from './Components/Profile_page4';
-import { Profile_page5 } from './Components/Profile_page5';
-import { Payment_page1 } from './Components/Payment_page1';
-import { Payment_page2 } from './Components/Payment_page2';
-import { Payment_page3 } from './Components/Payment_page3';
-
+import { Project_page1 } from "./Components/Project_page1";
+import { Project_page2 } from "./Components/Project_page2";
+import { Project_page3 } from "./Components/Project_page3";
+import { Profile_page1 } from "./Components/Profile_page1";
+import { Profile_subhead } from "./Components/Profile_subhead";
+import { Profile_page2 } from "./Components/Profile_page2";
+import { Profile_page3 } from "./Components/Profile_page3";
+import { Profile_page4 } from "./Components/Profile_page4";
+import { Profile_page5 } from "./Components/Profile_page5";
+import { Payment_page1 } from "./Components/Payment_page1";
+import { Payment_page2 } from "./Components/Payment_page2";
+import { Payment_page3 } from "./Components/Payment_page3";
 
 // import CourseViewCard from "./Components/Course-view-card/CourseViewCard";
 import CreativeCoursesDisplayPage from "./Components/CreativeCoursesDisplayPage/CreativeCoursesDisplayPage";
@@ -43,6 +42,7 @@ import { MentorPage } from "./Components/Mentor/MentorPage";
 import SignUp from "./Components/Register/SignUp";
 import Otp from "./Components/Register/Otp";
 import PaymentSuccessfullPage from "./Components/PaymentSuccessfullPage/PaymentSuccessfullPage";
+import { HomeAfterPayment } from "./Components/Home/HomeAfterPayment";
 // import MyCoursesOngoing from "./components/MyCoursesSection/MyCoursesOngoing";
 // import MyCoursesUpcoming from "./components/MyCoursesSection/MyCoursesUpcoming";
 // // import CourseViewCard from "./components/Course-view-card/CourseViewCard";
@@ -52,9 +52,9 @@ import PaymentSuccessfullPage from "./Components/PaymentSuccessfullPage/PaymentS
 // import AllCourses from "./components/CoursesSection/AllCourses";
 // import CreativeCourses from "./components/CoursesSection/CreativeCourses";
 // import TechnicalCourses from "./components/CoursesSection/TechnicalCourses";
-// import AllDemoPage from "./components/TakeAFreeLiveDemo/AllDemoPage";
-// // import RecordedDemoPage from "./components/TakeAFreeLiveDemo/RecordedDemoPage";
-// import TodayDemoPage from "./components/TakeAFreeLiveDemo/TodayDemoPage";
+// import AllDemoPage from "./Components/TakeAFreeLiveDemo/AllDemoPage";
+// import RecordedDemoPage from "./Components/TakeAFreeLiveDemo/RecordedDemoPage";
+// import TodayDemoPage from "./Components/TakeAFreeLiveDemo/TodayDemoPage";
 
 // Home section
 // import { Home } from "./Components/Home/Home";
@@ -151,11 +151,34 @@ function App() {
             <CoursePage />
           </Route>
           {/* /////////////////////////////////// */}
+          <Route path="/Payment_page1">
+            <Payment_page1 />
+          </Route>
+          <Route path="/Payment_page2">
+            <Payment_page2 />
+          </Route>
+          <Route path="/Payment_page3">
+            <Payment_page3 />
+          </Route>
+          <Route path="/PaymentSuccessfullPage">
+            <PaymentSuccessfullPage />
+          </Route>
           <Route path="/home">
             <Home />
           </Route>
-
-          <Route path="/">
+          <Route path="/HomeAfterPayment">
+            <HomeAfterPayment />
+          </Route>
+          <Route path="/Project_page1">
+            <Project_page1 />
+          </Route>
+          <Route path="/Profile_page1">
+            <Profile_page1 />
+          </Route>
+          <Route path="/AllDemoPage">
+             <AllDemoPage/>
+          </Route>
+          <Route path="/" exact>
             <RegisterNow />
           </Route>
         </Switch>

@@ -13,14 +13,14 @@ const MyCoursesAll = () => {
         icon="/Course-icons/Camera-icon.png"
         courseName="Photography"
       />
-      <CourseViewCard
+      {/* <CourseViewCard
         icon="/Course-icons/Graphic-design-icon.png"
         courseName="Graphic Design"
       />
       <CourseViewCard
         icon="/Course-icons/Android-icon.png"
         courseName="Android Dev"
-      />
+      /> */}
       <Footer />
     </div>
   );

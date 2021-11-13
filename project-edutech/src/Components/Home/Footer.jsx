@@ -5,7 +5,7 @@ import "./Styles/Footer.css";
 export const Footer = () => {
   return (
     <div className="footer">
-      <Link to="/">
+      <Link to="/home">
         <div className="footer_icons1 footer_icons">
           <img src="/Icons/explore.svg" alt="" />
           <p>Explore</p>
@@ -18,7 +18,7 @@ export const Footer = () => {
         </div>
       </Link>
 
-      <Link>
+      <Link to="/Project_page1">
         <div className="footer_icons3 footer_icons">
           <img src="/Icons/myProjects.svg" alt="" />
           <p>My Projects</p>
@@ -30,7 +30,7 @@ export const Footer = () => {
           <p>Community</p>
         </div>
       </Link>
-      <Link>
+      <Link to="/Profile_page1">
         <div className="footer_icons5 footer_icons">
           <img src="/Icons/Icon-Profile.png" alt="" />
           <p>Profile</p>
@@ -39,5 +39,3 @@ export const Footer = () => {
     </div>
   );
 };
-
-export default Footer;
