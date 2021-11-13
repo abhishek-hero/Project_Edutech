@@ -5,8 +5,7 @@ import { Footer } from '../Home/Footer'
 
 export const MentorPage = () => {
     return (
-        <div className='mentorPage_main_div'>
-
+        <div className="mentorPage_main_div">
             <Mentor></Mentor>
             <Mentor></Mentor>
             <Mentor></Mentor>
@@ -22,12 +21,11 @@ export const MentorPage = () => {
             <Mentor></Mentor>
             <Mentor></Mentor>
             <Mentor></Mentor>
-
             <Mentor></Mentor>
             <Mentor></Mentor>
             <Mentor></Mentor>
 
             <Footer></Footer>
         </div>
-    )
-}
+    );
+};
