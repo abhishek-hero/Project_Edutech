@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 export const HeaderCategoryBar = () => {
   return (
     <div className="Buttonbar_mypr">
-      <button className="btn_All">All</button>
+      {/* <button className="btn_All">All</button>
 
       <button className="btn_ong">Creative</button>
 
-      <button className="btn_upc">Technical</button>
+      <button className="btn_upc">Technical</button> */}
 
-      {/* <Link to="/courses-all">
+      <Link to="/courses-all">
         <button className="btn_All">All</button>
       </Link>
 
@@ -20,7 +20,7 @@ export const HeaderCategoryBar = () => {
       </Link>
       <Link to="/courses-technical">
         <button className="btn_upc">Technical</button>
-      </Link> */}
+      </Link>
     </div>
   );
 };

@@ -2,12 +2,13 @@ import React from "react";
 
 import "./DemoPages.css";
 import TimelineBarHeader from "./TimelineBarHeader";
+import { Footer } from "../Home/Footer";
 
 const UpcomingDemoPage = () => {
   return (
     <div>
       <div className="topHeaderBoxFlexCoursesDisplayPage">
-        <img src="/Basic-icons/Back Icon.png" alt="backIcon" />
+        <img src="/Basic-icons/Back-Icon.png" alt="backIcon" />
         <div className="categoryHeadingCoursesDisplayPage">
           Take a free demo
         </div>
@@ -50,6 +51,7 @@ const UpcomingDemoPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

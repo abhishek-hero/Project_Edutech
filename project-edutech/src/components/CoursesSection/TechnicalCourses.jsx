@@ -3,6 +3,7 @@ import CourseViewCard from "./CourseViewCard";
 import HeaderCategoryBar from "./HeaderCategoryBar";
 import CourseData from "../../CourseData";
 import "./CoursesSectionHeading.css";
+import { Footer } from "../Home/Footer";
 
 const TechnicalCourses = () => {
   const [allCourseData, setAllCourseData] = useState(CourseData);
@@ -10,7 +11,7 @@ const TechnicalCourses = () => {
     <div>
       <div>
         <div className="topHeaderBoxFlexCoursesDisplayPage">
-          <img src="/Basic-icons/Back Icon.png" alt="backIcon" />
+          <img src="/Basic-icons/Back-Icon.png" alt="backIcon" />
           <div className="categoryHeadingCoursesDisplayPage">Cousres</div>
         </div>
         <HeaderCategoryBar />
@@ -28,6 +29,7 @@ const TechnicalCourses = () => {
           }
         })}
       </div>
+      <Footer />
     </div>
   );
 };

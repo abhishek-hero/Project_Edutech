@@ -2,6 +2,7 @@ import React from "react";
 import CourseViewCard from "./CourseViewCard";
 import StatusBar from "../Course-status-bar/StatusBar";
 import MyCoursesHeading from "../My-courses-heading/MyCoursesHeading";
+import { Footer } from "../Home/Footer";
 
 const MyCoursesAll = () => {
   return (
@@ -12,14 +13,15 @@ const MyCoursesAll = () => {
         icon="/Course-icons/Camera-icon.png"
         courseName="Photography"
       />
-      <CourseViewCard
+      {/* <CourseViewCard
         icon="/Course-icons/Graphic-design-icon.png"
         courseName="Graphic Design"
       />
       <CourseViewCard
         icon="/Course-icons/Android-icon.png"
         courseName="Android Dev"
-      />
+      /> */}
+      <Footer />
     </div>
   );
 };

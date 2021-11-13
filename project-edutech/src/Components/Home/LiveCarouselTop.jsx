@@ -1,5 +1,6 @@
 import React from 'react'
 import './Styles/LiveCarouselTop.css'
+import {Link} from "react-router-dom"
 
 export const LiveCarouselTop = ({ title, background1, background2, background3 }) => {
   return (
@@ -7,7 +8,10 @@ export const LiveCarouselTop = ({ title, background1, background2, background3 }
     <>
       <div className="carousel_heading">
         <span className='carousel_title'>{title}</span>
+        <Link to="/AllDemoPage">
         <span className='carousel_link'>See all</span>
+        
+        </Link>
       </div>
 
       <div className="carousel_home">

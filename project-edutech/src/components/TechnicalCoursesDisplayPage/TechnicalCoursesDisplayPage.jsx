@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./TechnicalCoursesDisplayPage.css";
 import courseData from "../../CourseData";
+import { Footer } from "../Home/Footer";
 
 const TechnicalCoursesDisplayPage = () => {
   const [itemData, setItemData] = useState(courseData);
@@ -8,7 +9,7 @@ const TechnicalCoursesDisplayPage = () => {
   return (
     <div>
       <div className="topHeaderBoxFlexCoursesDisplayPage">
-        <img src="/Basic-icons/Back Icon.png" alt="backIcon" />
+        <img src="/Basic-icons/Back-Icon.png" alt="backIcon" />
         <div className="categoryHeadingCoursesDisplayPage">
           Technical Courses
         </div>
@@ -32,6 +33,7 @@ const TechnicalCoursesDisplayPage = () => {
           }
         })}
       </div>
+      <Footer />
       {/* btrbrjncejcrmrmevkrmvmkmbktmbktmkbmktmkmskmxskmckmdkmcvdkmvmbvjnjtkemdmkewd,xl */}
       {/* <div className="biggerContentBoxGridCoursesDisplayPage">
         {itemData.map((item, index) => (
