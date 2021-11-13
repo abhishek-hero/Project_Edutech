@@ -3,11 +3,11 @@ import './stylesheet/Input.css'
 import axios from 'axios'
 
 
-export const Input = ({ hashHandleChange }) => {
-
-    // const { value, hashHandleChange } = props;
+export const Input = () => {
 
     const [mobile, setMobile] = useState('')
+    // const [username, setUsername] = useState('')
+
 
     const handleChange = (e) => {
         setMobile(e.target.value)
@@ -15,26 +15,24 @@ export const Input = ({ hashHandleChange }) => {
 
 
     const handleClick = async (req, res) => {
+        console.log("hello")
 
-        axios
-            .post('http://localhost:3001/register', {
-                mobile: mobile
-            })
-            .then(function (res) {
-                console.log(res.data.otp);
-                const hash = res.data.hash;
-                // hashHandleChange(hash);
-            });
+        const { data } = await axios.post('http://localhost:3001/users', {
+            // name: username,
+            mobile: mobile
+        })
+
+        window.location = 'https://www.google.com'
     }
 
 
     return (
         <>
+            <input type="text" className="input_name" placeholder="Enter name" />
             <div className="input_group">
                 <span className="phone_code" id="basic-addon1">+91</span>
                 <input onChange={handleChange} type='Number' placeholder="Enter mobile number" value={mobile} className="input_phonenumber" required />
             </div>
-
             <button onClick={handleClick} className="otp_btn">Send OTP</button>
 
         </>

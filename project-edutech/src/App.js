@@ -1,12 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { LiveCarouselTop } from "./Components/Home/LiveCarouselTop";
+
+// Course Section
 import MyCoursesAll from "./Components/MyCoursesSection/MyCoursesAll";
 import MyCoursesOngoing from "./Components/MyCoursesSection/MyCoursesOngoing";
 import MyCoursesUpcoming from "./Components/MyCoursesSection/MyCoursesUpcoming";
 import MyCoursesCompleted from "./Components/MyCoursesSection/MyCoursesCompleted";
 
-// import CourseViewCard from "./Components/Course-view-card/CourseViewCard";
+
+// Course section
+// import CourseViewCard from "./components/Course-view-card/CourseViewCard";
 import CreativeCoursesDisplayPage from "./Components/CreativeCoursesDisplayPage/CreativeCoursesDisplayPage";
 import TechnicalCoursesDisplayPage from "./Components/TechnicalCoursesDisplayPage/TechnicalCoursesDisplayPage";
 import HeaderCategoryBar from "./Components/CoursesSection/HeaderCategoryBar";
@@ -18,15 +21,27 @@ import RecordedDemoPage from "./Components/TakeAFreeLiveDemo/RecordedDemoPage";
 import UpcomingDemoPage from "./Components/TakeAFreeLiveDemo/UpcomingDemoPage";
 import TodayDemoPage from "./Components/TakeAFreeLiveDemo/TodayDemoPage";
 
+// Home section
 import { Home } from "./Components/Home/Home";
 import { MentorPage } from "./Components/Mentor/MentorPage";
 // import { LoginPage } from './Components/Login/LoginPage'
-// import { RegisterNow } from './Components/Register/RegisterNow'
+import { RegisterNow } from './Components/Register/RegisterNow'
 // import { Carousel } from './Carousel/Carousel'
-// import { OtpPage } from './Components/Register/OtpPage'
-import SignUp from "./Components/Register/SignUp";
-import Otp from "./Components/Register/Otp";
-import {OtpPage} from './Components/Register/OtpPage';
+import { OtpPage } from './Components/Register/OtpPage'
+
+// import SignUp from "./Components/Register/SignUp";
+// import Otp from "./Components/Register/Otp";
+
+
+// Community section
+// import { Community } from "./Components/Community/Community"
+// import { GigsDetails } from "./Components/Community/GigsDetails"
+// import { InternshipDetails } from "./Components/Community/InternshipDetails"
+// import { CoursePage } from "./Components/CoursePage/CoursePage"
+
+//Free courses
+import {CourseLesson} from './Components/FreeCourses/CourseLesson';
+import {FreeCourses} from './Components/FreeCourses/FreeCourse';
 
 function App() {
   return (
@@ -71,13 +86,11 @@ function App() {
           </Route>
 
           <Route path="/verify">
-            <OtpPage/>
-            <Otp></Otp>
+            <OtpPage></OtpPage>
           </Route>
 
           <Route path="/register">
             <RegisterNow />
-            <SignUp/>
           </Route>
 
           <Route path="/mentors">
@@ -85,7 +98,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Home />
+            <Home></Home>
           </Route>
         </Switch>
       </div>

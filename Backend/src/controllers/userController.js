@@ -20,7 +20,7 @@ const router = express.Router()
 //     })
 
 //     res.status(201).send("created mobile no.")
-// })
+// }
 
 router.post("/", body("mobile").isLength({ min: 10, max: 10 }).withMessage("Enter valid mobile number"), async (req, res) => {
     const errors = validationResult(req);
@@ -32,6 +32,7 @@ router.post("/", body("mobile").isLength({ min: 10, max: 10 }).withMessage("Ente
 
         const userCheck = await User.find()
         const user = await User.create({
+            name: req.body.name,
             mobile: req.body.mobile,
             otp: Math.floor(1000 + Math.random() * 9000)
         })
@@ -43,44 +44,5 @@ router.post("/", body("mobile").isLength({ min: 10, max: 10 }).withMessage("Ente
     }
 
 })
-
-// router.get("/", async (req, res) => {
-//     //check if user is in database or not
-//     let user = await User.findOne({
-//         mobile: req.query.mobile
-//     });
-//     //if yes
-//     if (user) {
-//         return res.send(true)
-//     }
-//     //if no, create user
-//     user = await User.create({
-//         mobile: req.query.mobile,
-//         otp: Math.floor(1000 + Math.random() * 9000)
-//     });
-//     console.log(user)
-// })
-
-// router.get("/", async (req, res) => {
-//     let user = await User.find().lean().exec();
-//     //console.log(user)
-//     return res.send({ user })
-// })
-
-// router.post("/", async (req, res) => {
-//     let user = await User.create({
-//         mobile: req.body.mobile,
-//         otp: Math.floor(1000 + Math.random() * 9000)
-//     })
-//     return res.send({ user })
-// })
-
-// router.get("/findmobileno", async (req, res) => {
-//     let user = await User.findOne(req.query);
-//     if (!user)
-//         return res.send(false);
-//     else
-//         return res.send({ user })
-// })
 
 module.exports = router;

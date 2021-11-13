@@ -1,0 +1,20 @@
+.register_user {
+    background-color: white;
+    border: 1px solid #28B0DC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center  ;
+    letter-spacing: 0.02em;
+    border-radius: 30px;
+}
+
+.register_user a{
+    text-decoration: none;
+    color: #28B0DC;
+}
+
+.register_user a:hover{
+    color: #28B0DC;
+}
