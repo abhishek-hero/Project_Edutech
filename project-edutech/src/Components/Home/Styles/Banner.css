@@ -7,3 +7,10 @@
     margin-bottom: 23px;
     padding-top: 72px;
 }
+
+.home_banner img {
+    width: 88%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
