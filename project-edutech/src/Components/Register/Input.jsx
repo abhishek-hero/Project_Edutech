@@ -3,11 +3,11 @@ import './stylesheet/Input.css'
 import axios from 'axios'
 
 
-export const Input = ({ hashHandleChange }) => {
-
-    // const { value, hashHandleChange } = props;
+export const Input = () => {
 
     const [mobile, setMobile] = useState('')
+    // const [username, setUsername] = useState('')
+
 
     const handleChange = (e) => {
         setMobile(e.target.value)
@@ -16,15 +16,12 @@ export const Input = ({ hashHandleChange }) => {
 
     const handleClick = async (req, res) => {
 
-        axios
-            .post('http://localhost:3001/register', {
-                mobile: mobile
-            })
-            .then(function (res) {
-                console.log(res.data.otp);
-                const hash = res.data.hash;
-                // hashHandleChange(hash);
-            });
+        const { data } = await axios.post('http://localhost:3001/users', {
+            // name: username,
+            mobile: mobile
+        })
+
+        window.location = '/verify'
     }
 
 
