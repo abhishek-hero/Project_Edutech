@@ -1,0 +1,38 @@
+.myCoursesHeadingBiggerBox {
+  width: 99%;
+  height: 60px;
+  margin-top: 24px;
+  background: #ffffff;
+  /* border: 1px solid blue; */
+  /* justify-content: left;
+  text-align: left; */
+}
+
+.myCoursesHeading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #5a5a5a;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+  margin-left: 24.5px;
+  /* line-height: 28px; */
+}
+
+/* position: absolute;
+width: 132px;
+height: 28px;
+left: 24.5px;
+top: 16px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.02em;
+
+/* 5A5A5A */
