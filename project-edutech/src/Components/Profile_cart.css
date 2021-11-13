@@ -1,0 +1,51 @@
+.cart_layout{
+    height: 60px;
+    width: 363px;
+    margin-left: 24px;
+    background: #FFFFFF;
+/* Drop Shadow 1 */
+
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.cart_icon{
+    height: 37.72px;
+    width: 50px;
+    margin-left: 13.5px;
+    margin-top: 11px;
+    background: #D9D9D9;
+}
+
+.cart_name{
+    height: 21px;
+    width: 114px;
+    margin-top: 19.64px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    color: #000000;
+    margin-left: 45px;
+}
+
+.cart_btn{
+    height: 32px;
+    width: 80px;
+    background: #F2AC20;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    margin-top: 13.86px;
+    margin-left: 45px;
+}
+
+.cart_btn_name{
+    height: 19px;
+    width: 36px;
+    margin-top: 7px;
+    margin-left: 22px;
+    background: #F2AC20;
+}
