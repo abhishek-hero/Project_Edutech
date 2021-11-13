@@ -37,7 +37,7 @@ const CourseData = [
     status: "Upcoming",
     type: "Paid",
     category: "Technical",
-    image: "/Course-icons/Ethical Hacking-icon.png",
+    image: "/Course-icons/Ethical-Hacking-icon.png",
   },
   {
     id: "6",
@@ -53,7 +53,7 @@ const CourseData = [
     status: "Upcoming",
     type: "Paid",
     category: "Creative",
-    image: "/Course-icons/Fashion Design-icon.png",
+    image: "/Course-icons/Fashion-Design-icon.png",
   },
   {
     id: "8",
@@ -117,7 +117,7 @@ const CourseData = [
     status: "Upcoming",
     type: "Paid",
     category: "Creative",
-    image: "/Course-icons/Standup Comedy-icon.png",
+    image: "/Course-icons/Standup-Comedy-icon.png",
   },
   {
     id: "16",
@@ -125,7 +125,7 @@ const CourseData = [
     status: "All",
     type: "Paid",
     category: "Technical",
-    image: "/Course-icons/C++ Programming-icon.png",
+    image: "/Course-icons/C++_Programming-icon.png",
   },
   {
     id: "17",
@@ -133,7 +133,7 @@ const CourseData = [
     status: "All",
     type: "Paid",
     category: "Technical",
-    image: "/Course-icons/Full Stack Development-icon.png",
+    image: "/Course-icons/Full-Stack-Development-icon.png",
   },
   {
     id: "18",
@@ -141,7 +141,7 @@ const CourseData = [
     status: "All",
     type: "Paid",
     category: "Technical",
-    image: "/Course-icons/Web Development-icon.png",
+    image: "/Course-icons/Web-Development-icon.png",
   },
   {
     id: "19",
@@ -149,7 +149,7 @@ const CourseData = [
     status: "All",
     type: "Paid",
     category: "Technical",
-    image: "/Course-icons/UX Design-icon.png",
+    image: "/Course-icons/UX-Design-icon.png",
   },
   {
     id: "20",
@@ -157,7 +157,7 @@ const CourseData = [
     status: "Upcoming",
     type: "Paid",
     category: "Technical",
-    image: "/Course-icons/Java Programming-icon.png",
+    image: "/Course-icons/Java-Programming-icon.png",
   },
 ];
 

@@ -3,6 +3,7 @@ import CourseViewCard from "./CourseViewCard";
 import HeaderCategoryBar from "./HeaderCategoryBar";
 import CourseData from "../../CourseData";
 import "./CoursesSectionHeading.css";
+import { Footer } from "../Home/Footer";
 
 const TechnicalCourses = () => {
   const [allCourseData, setAllCourseData] = useState(CourseData);
@@ -28,6 +29,7 @@ const TechnicalCourses = () => {
           }
         })}
       </div>
+      <Footer />
     </div>
   );
 };

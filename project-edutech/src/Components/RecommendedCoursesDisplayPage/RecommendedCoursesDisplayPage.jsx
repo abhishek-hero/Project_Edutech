@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./CreativeCoursesDisplayPage.css";
+import "./RecommendedCoursesDisplayPage.css";
 import courseData from "../../CourseData";
 import { Footer } from "../Home/Footer";
 
-const CreativeCoursesDisplayPage = () => {
+const RecommendedCoursesDisplayPage = () => {
   const [itemData, setItemData] = useState(courseData);
 
   return (
@@ -11,29 +11,26 @@ const CreativeCoursesDisplayPage = () => {
       <div className="topHeaderBoxFlexCoursesDisplayPage">
         <img src="/Basic-icons/Back-Icon.png" alt="backIcon" />
         <div className="categoryHeadingCoursesDisplayPage">
-          Creative Courses
+          Recommended Courses
         </div>
       </div>
 
       <div className="biggerContentBoxGridCoursesDisplayPage">
-        {itemData.map((item, index) => {
-          if (item.category === "Creative") {
-            return (
-              <div className="smallerContentBoxGrid" key={index}>
-                <img
-                  className="courseIconCoursesDisplayPage"
-                  src={item.image}
-                  alt="course-image"
-                />
-                <div className="courseNameCoursesDisplayPage">
-                  {item.course_name}
-                </div>
+        {itemData.slice(0, 6).map((item, index) => {
+          return (
+            <div className="smallerContentBoxGrid" key={index}>
+              <img
+                className="courseIconCoursesDisplayPage"
+                src={item.image}
+                alt="course-image"
+              />
+              <div className="courseNameCoursesDisplayPage">
+                {item.course_name}
               </div>
-            );
-          }
+            </div>
+          );
         })}
       </div>
-      <Footer />
       {/* btrbrjncejcrmrmevkrmvmkmbktmbktmkbmktmkmskmxskmckmdkmcvdkmvmbvjnjtkemdmkewd,xl */}
       {/* <div className="biggerContentBoxGridCoursesDisplayPage">
         {itemData.map((item, index) => (
@@ -49,8 +46,9 @@ const CreativeCoursesDisplayPage = () => {
           </div>
         ))}
       </div> */}
+      <Footer />
     </div>
   );
 };
 
-export default CreativeCoursesDisplayPage;
+export default RecommendedCoursesDisplayPage;

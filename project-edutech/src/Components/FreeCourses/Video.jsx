@@ -5,7 +5,7 @@ export const Video = () => {
     return (
         <>
             <div className="video-section">
-                <img src="https://via.placeholder.com/363x206/#808080" alt="" />
+                <img src="/Images/Free Courses.png" alt="" />
             </div>
         </>
     )

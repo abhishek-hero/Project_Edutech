@@ -26,6 +26,7 @@ import CreativeCoursesDisplayPage from "./Components/CreativeCoursesDisplayPage/
 import TechnicalCoursesDisplayPage from "./Components/TechnicalCoursesDisplayPage/TechnicalCoursesDisplayPage";
 import HeaderCategoryBar from "./Components/CoursesSection/HeaderCategoryBar";
 import AllCourses from "./Components/CoursesSection/AllCourses";
+import RecommendedCoursesDisplayPage from "./Components/RecommendedCoursesDisplayPage/RecommendedCoursesDisplayPage";
 import CreativeCourses from "./Components/CoursesSection/CreativeCourses";
 import TechnicalCourses from "./Components/CoursesSection/TechnicalCourses";
 import AllDemoPage from "./Components/TakeAFreeLiveDemo/AllDemoPage";
@@ -33,6 +34,15 @@ import RecordedDemoPage from "./Components/TakeAFreeLiveDemo/RecordedDemoPage";
 import UpcomingDemoPage from "./Components/TakeAFreeLiveDemo/UpcomingDemoPage";
 import TodayDemoPage from "./Components/TakeAFreeLiveDemo/TodayDemoPage";
 
+import { Home } from "./Components/Home/Home";
+import { MentorPage } from "./Components/Mentor/MentorPage";
+// import { LoginPage } from './Components/Login/LoginPage'
+// import { RegisterNow } from './Components/Register/RegisterNow'
+// import { Carousel } from './Carousel/Carousel'
+// import { OtpPage } from './Components/Register/OtpPage'
+import SignUp from "./Components/Register/SignUp";
+import Otp from "./Components/Register/Otp";
+import PaymentSuccessfullPage from "./Components/PaymentSuccessfullPage/PaymentSuccessfullPage";
 // import MyCoursesOngoing from "./components/MyCoursesSection/MyCoursesOngoing";
 // import MyCoursesUpcoming from "./components/MyCoursesSection/MyCoursesUpcoming";
 // // import CourseViewCard from "./components/Course-view-card/CourseViewCard";
@@ -46,32 +56,32 @@ import TodayDemoPage from "./Components/TakeAFreeLiveDemo/TodayDemoPage";
 // // import RecordedDemoPage from "./components/TakeAFreeLiveDemo/RecordedDemoPage";
 // import TodayDemoPage from "./components/TakeAFreeLiveDemo/TodayDemoPage";
 
-
-
 // Home section
-import { Home } from "./Components/Home/Home";
-import { MentorPage } from "./Components/Mentor/MentorPage";
+// import { Home } from "./Components/Home/Home";
+// import { MentorPage } from "./Components/Mentor/MentorPage";
 // import { LoginPage } from './Components/Login/LoginPage'
-import { RegisterNow } from './Components/Register/RegisterNow'
+import { RegisterNow } from "./Components/Register/RegisterNow";
 // import { Carousel } from './Carousel/Carousel'
-// import { OtpPage } from './Components/Register/OtpPage'
+import { OtpPage } from "./Components/Register/OtpPage";
 
-import SignUp from "./Components/Register/SignUp";
-import Otp from "./Components/Register/Otp";
+// import SignUp from "./Components/Register/SignUp";
+// import Otp from "./Components/Register/Otp";
 
 //Community pages
-import {Community} from "./Components/Community/"
- import {GigsDetails} from "./Components/Community/GigsDetails"
- import {InternshipDetails} from "./Components/Community/InternshipDetails"
- import {CoursePage} from "./Components/CoursePage/CoursePage"
+import { Community } from "./Components/Community/Community";
+import { GigsDetails } from "./Components/Community/GigsDetails";
+import { InternshipDetails } from "./Components/Community/InternshipDetails";
+import { CoursePage } from "./Components/CoursePage/CoursePage";
 
+//Free courses
+import { CourseLesson } from "./Components/FreeCourses/CourseLesson";
+import { FreeCourses } from "./Components/FreeCourses/FreeCourse";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-        
           <Route path="/free-live-demo">
             <AllDemoPage />
           </Route>
@@ -106,41 +116,46 @@ function App() {
           <Route path="/verify">
             <OtpPage></OtpPage>
           </Route>
-
+          {/* 
           <Route path="/register">
             <RegisterNow />
-          </Route>
+          </Route> */}
 
           <Route path="/mentors">
-            <MentorPage></MentorPage>
+            <MentorPage />
           </Route>
 
           <Route path="/community">
-            <Community/>
+            <Community />
           </Route>
 
-            
           <Route path="/gigs-details">
-            <GigsDetails/>
+            <GigsDetails />
           </Route>
 
           <Route path="/intern-details">
-            <InternshipDetails/>
+            <InternshipDetails />
           </Route>
 
           <Route path="/course-page">
-            <CoursePage/>
+            <CoursePage />
           </Route>
 
           <Route path="/">
-            <Home/>
+            <RegisterNow />
           </Route>
-
-         
         </Switch>
       </div>
     </Router>
   );
 }
+
+// function App() {
+//   return (
+//     <div>
+//       <PaymentSuccessfullPage />
+//     </div>
+//   );
+// }
 
 export default App;
