@@ -1,0 +1,99 @@
+.intsp_heading {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    margin: 24px;
+}
+
+.intsp_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5A5A5A;
+}
+
+.intsp_link {
+    font-size: 17px;
+    font-weight: 400;
+    color: #28B0DC;
+}
+
+.intsp_home {
+    display: flex;
+    margin-left: 15px;
+    overflow-x: scroll;
+}
+
+
+.intsp_div {
+    background-color: #000000;
+    margin: 0 9px;
+   
+}
+
+.intsp_home::-webkit-scrollbar{
+    display: none;
+}
+
+.mentor_name {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mentor_profession {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.app_info {
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (min-width: 790px) {
+    .intsp_home {
+        display: flex;
+        margin-left: 75px;
+        height: 200px;
+        overflow-x: scroll;
+    }
+    
+    .intsp_div {
+        height: 95%;
+        width: 300px;
+        border-radius: 15px;
+        margin: 10px 10px;
+    }
+
+    .intsp_home::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+
+.second1_svg {
+    position: absolute;
+    top: 1360px;
+    left: 105px;
+}
+
+.second2_svg {
+    position: absolute;
+    top: 1360px;
+    left: 120px;
+}
+
+.second3_svg {
+    position: absolute;
+    top: 1377px;
+    left: 105px;
+}
+
+.second4_svg {
+    position: absolute;
+    top: 1377px;
+    left: 120px;
+}
