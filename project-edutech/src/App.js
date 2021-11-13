@@ -1,11 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { LiveCarouselTop } from "./components/Home/LiveCarouselTop";
-import MyCoursesAll from "./components/MyCoursesSection/MyCoursesAll";
-import MyCoursesOngoing from "./components/MyCoursesSection/MyCoursesOngoing";
-import MyCoursesUpcoming from "./components/MyCoursesSection/MyCoursesUpcoming";
-import MyCoursesCompleted from "./components/MyCoursesSection/MyCoursesCompleted";
+import { LiveCarouselTop } from "./Components/Home/LiveCarouselTop";
+import MyCoursesAll from "./Components/MyCoursesSection/MyCoursesAll";
+import MyCoursesOngoing from "./Components/MyCoursesSection/MyCoursesOngoing";
+import MyCoursesUpcoming from "./Components/MyCoursesSection/MyCoursesUpcoming";
+import MyCoursesCompleted from "./Components/MyCoursesSection/MyCoursesCompleted";
 
+<<<<<<< HEAD
 // import CourseViewCard from "./components/Course-view-card/CourseViewCard";
 import CreativeCoursesDisplayPage from "./components/CreativeCoursesDisplayPage/CreativeCoursesDisplayPage";
 import TechnicalCoursesDisplayPage from "./components/TechnicalCoursesDisplayPage/TechnicalCoursesDisplayPage";
@@ -17,15 +18,28 @@ import AllDemoPage from "./components/TakeAFreeLiveDemo/AllDemoPage";
 import RecordedDemoPage from "./components/TakeAFreeLiveDemo/RecordedDemoPage";
 import UpcomingDemoPage from "./components/TakeAFreeLiveDemo/UpcomingDemoPage";
 import TodayDemoPage from "./components/TakeAFreeLiveDemo/TodayDemoPage";
+=======
+// import CourseViewCard from "./Components/Course-view-card/CourseViewCard";
+import CreativeCoursesDisplayPage from "./Components/CreativeCoursesDisplayPage/CreativeCoursesDisplayPage";
+import TechnicalCoursesDisplayPage from "./Components/TechnicalCoursesDisplayPage/TechnicalCoursesDisplayPage";
+import HeaderCategoryBar from "./Components/CoursesSection/HeaderCategoryBar";
+import AllCourses from "./Components/CoursesSection/AllCourses";
+import CreativeCourses from "./Components/CoursesSection/CreativeCourses";
+import TechnicalCourses from "./Components/CoursesSection/TechnicalCourses";
+import AllDemoPage from "./Components/TakeAFreeLiveDemo/AllDemoPage";
+import RecordedDemoPage from "./Components/TakeAFreeLiveDemo/RecordedDemoPage";
+import UpcomingDemoPage from "./Components/TakeAFreeLiveDemo/UpcomingDemoPage";
+import TodayDemoPage from "./Components/TakeAFreeLiveDemo/TodayDemoPage";
+>>>>>>> 0b4dc7b8b13f7076b10f17455cdfbb7df3f76e96
 
-import { Home } from "./components/Home/Home";
-import { MentorPage } from "./components/Mentor/MentorPage";
-// import { LoginPage } from './components/Login/LoginPage'
-// import { RegisterNow } from './components/Register/RegisterNow'
+import { Home } from "./Components/Home/Home";
+import { MentorPage } from "./Components/Mentor/MentorPage";
+// import { LoginPage } from './Components/Login/LoginPage'
+// import { RegisterNow } from './Components/Register/RegisterNow'
 // import { Carousel } from './Carousel/Carousel'
-// import { OtpPage } from './components/Register/OtpPage'
-import SignUp from "./components/Register/SignUp";
-import Otp from "./components/Register/Otp";
+// import { OtpPage } from './Components/Register/OtpPage'
+import SignUp from "./Components/Register/SignUp";
+import Otp from "./Components/Register/Otp";
 
 function App() {
   return (
