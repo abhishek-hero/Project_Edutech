@@ -1,0 +1,147 @@
+.gigd{
+    position: absolute;
+    width: 411px;
+    height: 206px;
+    left: 0px;
+    top: 102px;
+    
+    /* D9D9D9 */
+    
+    background: #D9D9D9;
+    border-radius: 10px; 
+}
+.gigd-div{
+    position: absolute;
+    left: 6%;
+    top: 30%;
+    bottom: -9.71%;
+    width:363px;
+    
+    /* FFFFFF */
+    
+    background:#ffffff; 
+}
+.gigd-name{
+ position: absolute;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.02em;
+margin-top: 30px;
+margin-left: 15px;
+
+
+/* Accent Color */
+
+color: #F2AC20;
+
+}
+.gigd-title{
+    position: absolute;
+    left: 0.54%;
+    right: 50.55%;
+    top: 12.27%;
+    bottom: 84.16%;
+
+
+
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+/* Primary 1 */
+
+color: #28B0DC;
+text-align: left;
+}
+.gigd-detail p{
+    position: absolute;
+left: 2.42%;
+right: 0%;
+top: 18.4%;
+bottom: 62.18%;
+
+text-align: left;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* 898989 */
+
+color: #898989;
+}
+.calendar{
+    position:relative;
+    top: 46%;
+}
+.calendar span{
+    left: 0%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.para p{
+    margin-left: 10px;
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.02em;
+color: #5A5A5A;
+
+}
+.span-btn{
+    border: 1px solid #898989;
+    color:  #898989;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.span-btn p{
+    margin: 3px;
+}
+.app-btn button{
+margin-top: 0%;
+margin-left: 5px;
+}
+.chat-btn{
+    background-color:#898989;
+}
+
+.intern-name{
+    position: absolute;
+   font-size: 36px;
+   line-height: 42px;
+   letter-spacing: 0.02em;
+   margin-top: 30px;
+   margin-left: 40px;
+   
+   
+   /* Accent Color */
+   
+   color: #F2AC20;
+   
+   }
+   .intern-title{
+       position: absolute;
+       left: 0.54%;
+       right: 50.55%;
+       top: 12.27%;
+       bottom: 84.16%;
+   
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+   /* identical to box height */
+   
+   letter-spacing: 0.02em;
+   
+   /* Primary 1 */
+   
+   color: #28B0DC;
+   }
+
+
+ 
