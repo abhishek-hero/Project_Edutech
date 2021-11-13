@@ -68,6 +68,16 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/courses">
+            <AllCourses />
+          </Route>
+          <Route path="/courses-creative">
+            <CreativeCourses />
+          </Route>
+          <Route path="/courses-technical">
+            <TechnicalCourses />
+          </Route>
+
           <Route path="/free-live-demo">
             <AllDemoPage />
           </Route>
@@ -122,9 +132,13 @@ function App() {
           <Route path="/intern-details">
             <InternshipDetails />
           </Route>
-
+          {/* ///////////////////////////////////////////////////////////// */}
           <Route path="/course-page">
             <CoursePage />
+          </Route>
+          {/* /////////////////////////////////// */}
+          <Route path="/home">
+            <Home />
           </Route>
 
           <Route path="/">

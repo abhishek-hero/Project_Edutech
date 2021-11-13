@@ -1,5 +1,6 @@
 import React from "react";
 import "./CourseViewCard.css";
+import { Link } from "react-router-dom";
 
 const CourseViewCard = ({ icon, courseName }) => {
   return (
@@ -8,7 +9,9 @@ const CourseViewCard = ({ icon, courseName }) => {
         <div className="course-view-card">
           <img className="course-view-card-icon" src={icon} alt="camera-logo" />
           <h3 className="course-view-card-heading">{courseName}</h3>
-          <button className="course-view-card-view-button">View</button>
+          <Link to="/course-page">
+            <button className="course-view-card-view-button">View</button>
+          </Link>
         </div>
       </div>
     </>

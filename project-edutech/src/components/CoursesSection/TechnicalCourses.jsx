@@ -11,7 +11,7 @@ const TechnicalCourses = () => {
     <div>
       <div>
         <div className="topHeaderBoxFlexCoursesDisplayPage">
-          <img src="/Basic-icons/Back Icon.png" alt="backIcon" />
+          <img src="/Basic-icons/Back-Icon.png" alt="backIcon" />
           <div className="categoryHeadingCoursesDisplayPage">Cousres</div>
         </div>
         <HeaderCategoryBar />
