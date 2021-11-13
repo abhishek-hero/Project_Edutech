@@ -24,7 +24,7 @@ export const Footer = () => {
           <p>My Projects</p>
         </div>
       </Link>
-      <Link>
+      <Link to="/community">
         <div className="footer_icons4 footer_icons">
           <img src="/Icons/myProjects.svg" alt="" />
           <p>Community</p>
