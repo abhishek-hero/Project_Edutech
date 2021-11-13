@@ -15,14 +15,14 @@ function CoursePage() {
                 <Button content="Buy Now"/>
                 </div>
             </div>
-            <div className="demo-video">
+            <div className="demos-video">
 
             </div>
             <div className="overview-book">
                <a onClick={()=>setOverview(true)}>Over View</a>
                <a onClick={()=>setOverview(false)}>Book a Demo</a> 
             </div>
-            <div className="book-demo">
+            <div className="book-demos">
                 {overvies ? <Overview/> : <BookDemo/> }
                 
             </div>

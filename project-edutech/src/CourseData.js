@@ -91,7 +91,7 @@ const CourseData = [
     id: "12",
     course_name: "Videograpgy",
     status: "Ongoing",
-    type: "",
+    type: "Paid",
     category: "Creative",
     image: "/Course-icons/Videography-icon.png",
   },

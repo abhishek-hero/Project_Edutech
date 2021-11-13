@@ -1,16 +1,25 @@
 import React from "react";
 import "./TimelineBarHeader.css";
+import { Link } from "react-router-dom";
 
 export const TimelineBarHeader = () => {
   return (
     <div className="Buttonbar_mypr">
-      <button className="btn_All">All</button>
+      <Link to="/all-free-demo">
+        <button className="btn_All">All</button>
+      </Link>
 
-      <button className="btn_ong">Today</button>
+      <Link to="/today-free-demo">
+        <button className="btn_ong">Today</button>
+      </Link>
 
-      <button className="btn_upc">Upcoming</button>
+      <Link to="/upcoming-free-demo">
+        <button className="btn_upc">Upcoming</button>
+      </Link>
 
-      <button className="btn_completed">Recorded</button>
+      <Link to="/recorded-free-demo">
+        <button className="btn_completed">Recorded</button>
+      </Link>
     </div>
   );
 };

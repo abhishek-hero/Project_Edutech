@@ -36,22 +36,9 @@
     display: none;
 }
 
-.mentor_name {
-    font-size: 12px;
-    font-weight: 500;
-}
 
-.mentor_profession {
-    font-size: 12px;
-    font-weight: 400;
-}
 
-.app_info {
-    color: #5A5A5A;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-}
+
 
 @media (min-width: 790px) {
     .intsp_home {
@@ -74,26 +61,3 @@
 }
 
 
-.second1_svg {
-    position: absolute;
-    top: 1360px;
-    left: 105px;
-}
-
-.second2_svg {
-    position: absolute;
-    top: 1360px;
-    left: 120px;
-}
-
-.second3_svg {
-    position: absolute;
-    top: 1377px;
-    left: 105px;
-}
-
-.second4_svg {
-    position: absolute;
-    top: 1377px;
-    left: 120px;
-}

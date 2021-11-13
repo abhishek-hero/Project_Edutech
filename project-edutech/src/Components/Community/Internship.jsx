@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Internship.css'
 
 export const Internship = ({ title, radius, width, height, svg1, svg2a, svg2, card_footer1, card_footer2 }) => {
@@ -8,7 +9,7 @@ export const Internship = ({ title, radius, width, height, svg1, svg2a, svg2, ca
                 <span className='intsp_title'>{title}</span>
                 <span className='intsp_link'>See all</span>
             </div>
-
+                <Link to="/intern-details">
             <div className="intsp_home">
 
                 <span>
@@ -38,6 +39,7 @@ export const Internship = ({ title, radius, width, height, svg1, svg2a, svg2, ca
                     <img className='intsp_svg' src="" alt="" />
                 </span>
             </div>
+            </Link>
 
         </>
     )
