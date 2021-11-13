@@ -10,7 +10,7 @@ import MyCoursesCompleted from "./components/MyCoursesSection/MyCoursesCompleted
 import CreativeCoursesDisplayPage from "./components/CreativeCoursesDisplayPage/CreativeCoursesDisplayPage";
 import TechnicalCoursesDisplayPage from "./components/TechnicalCoursesDisplayPage/TechnicalCoursesDisplayPage";
 import HeaderCategoryBar from "./components/CoursesSection/HeaderCategoryBar";
-import AllCourses from "./components/CoursesSection/AllCourses";
+import AllCourses from "./Components/CoursesSection/AllCourses";
 import CreativeCourses from "./components/CoursesSection/CreativeCourses";
 import TechnicalCourses from "./components/CoursesSection/TechnicalCourses";
 import AllDemoPage from "./components/TakeAFreeLiveDemo/AllDemoPage";
