@@ -46,9 +46,9 @@ import Otp from "./Components/Register/Otp";
 
 //Community pages
 import {Community} from "./Components/Community/Community"
-import {GigsDetails} from "./Components/Community/GigsDetails"
-import {InternshipDetails} from "./Components/Community/InternshipDetails"
-import {CoursePage} from "./Components/CoursePage/CoursePage"
+ import {GigsDetails} from "./Components/Community/GigsDetails"
+ import {InternshipDetails} from "./Components/Community/InternshipDetails"
+ import {CoursePage} from "./Components/CoursePage/CoursePage"
 
 
 function App() {

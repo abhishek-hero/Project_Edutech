@@ -16,7 +16,7 @@ function CoursePage() {
                 </div>
             </div>
             <div className="demos-video">
-
+                <img src="./Images/demo-videos.png"/>
             </div>
             <div className="overview-book">
                <a onClick={()=>setOverview(true)}>Over View</a>

@@ -82,17 +82,12 @@ color: #898989;
     display: flex;
     margin-bottom: 30px;
 }
-span p{
+.para p{
     margin-left: 10px;
     font-weight: 500;
 font-size: 18px;
 line-height: 21px;
-/* identical to box height */
-
 letter-spacing: 0.02em;
-
-/* 5A5A5A */
-
 color: #5A5A5A;
 
 }

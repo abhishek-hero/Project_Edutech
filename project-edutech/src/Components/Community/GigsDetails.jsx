@@ -18,26 +18,26 @@ function GigsDetails() {
                    Aenean tincidunt erat non nulla iaculis, non<br/> pretium odio feugiat.</p>
               </div>
               <div className="calendar">
-              <span>
+              <span className="para">
               <img src="/Images/calendar.png" alt="calender"/>
               <p>Last date to apply:</p>
               <div className="span-btn"><p>01-09-21</p></div>
              </span>
-              <span>
+              <span className="para">
               <img src="/Images/calendar.png" alt="calender"/>  
               <p>From:</p>
               <div className="span-btn"><p>01-09-21</p></div>
               <p>To:</p>
               <div className="span-btn"><p>01-10-21</p></div>
               </span>
-              <span>
+              <span className="para">
               <img src="/Images/calendar.png" alt="calender"/>  
               <p>From:</p>
               <div className="span-btn"><p>12:00PM</p></div>
               <p>To:</p>
               <div className="span-btn"><p>04:00PM</p></div>
               </span>
-              <span>
+              <span className="para">
                 <img src="/Images/rupee.png" alt="rupee"/>
                 <div className="span-btn"><p>500</p></div>
               </span>
