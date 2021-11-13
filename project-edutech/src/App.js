@@ -46,10 +46,10 @@ import SignUp from "./Components/Register/SignUp";
 import Otp from "./Components/Register/Otp";
 
 //Community pages
-import {Community} from "./Components/Community/"
- import {GigsDetails} from "./Components/Community/GigsDetails"
- import {InternshipDetails} from "./Components/Community/InternshipDetails"
- import {CoursePage} from "./Components/CoursePage/CoursePage"
+// import { Community } from "./Components/Community/"
+import { GigsDetails } from "./Components/Community/GigsDetails"
+import { InternshipDetails } from "./Components/Community/InternshipDetails"
+import { CoursePage } from "./Components/CoursePage/CoursePage"
 
 
 function App() {
@@ -57,7 +57,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-        
+
           <Route path="/free-live-demo">
             <AllDemoPage />
           </Route>
@@ -102,27 +102,27 @@ function App() {
           </Route>
 
           <Route path="/community">
-            <Community/>
+            <Community />
           </Route>
 
-            
+
           <Route path="/gigs-details">
-            <GigsDetails/>
+            <GigsDetails />
           </Route>
 
           <Route path="/intern-details">
-            <InternshipDetails/>
+            <InternshipDetails />
           </Route>
 
           <Route path="/course-page">
-            <CoursePage/>
+            <CoursePage />
           </Route>
 
           <Route path="/">
-            <Home/>
+            <Home />
           </Route>
 
-         
+
         </Switch>
       </div>
     </Router>
