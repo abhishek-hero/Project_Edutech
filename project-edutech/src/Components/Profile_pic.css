@@ -1,0 +1,57 @@
+.profile_lay{
+    display: flex;
+    flex-direction: row;
+}
+
+.pic_layout{
+    height: 226px;
+    width: 159px;
+    margin-left: 123px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.edit_layout{
+    height: 20px;
+    width: 20px;
+    margin-left: 84px;
+    margin-top: 20px;
+}
+
+.pic{
+    height: 150px;
+    width: 150px;
+    margin-left: 4px;
+}
+
+.contact_lay{
+    height: 70px;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.name{
+    height: 26px;
+    width: 81px;
+    font-size: 22px;
+    font-weight: 400px;
+    margin-left: 39px;
+    line-height: 26px;
+    color: #5A5A5A;
+}
+
+.contact{
+    height: 19px;
+    width: 124px;
+    font-weight: 300;
+    margin-left: 18px;
+    color: #5A5A5A;
+    margin-top: 3px;
+}
+
+.email{
+    height: 19px;
+    width: 100%;
+    font-size: 16px;
+    color: #5A5A5A;
+}
